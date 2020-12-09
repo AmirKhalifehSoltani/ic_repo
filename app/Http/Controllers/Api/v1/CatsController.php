@@ -68,9 +68,9 @@ class CatsController extends Controller
         $cat_data = ['name' => $name];
         $new_cat = Cat::create($cat_data);
         if ($new_cat && $new_cat instanceof Cat) {
-            return response()->json(['status_code' => 200, 'message' => 'Category added successfully']);
+            return response()->json(['message' => 'Category added successfully', 'status_code' => 200]);
         }
-        return response()->json(['status_code' => 200, 'message' => 'Category did not add successfully']);;
+        return response()->json(['message' => 'Category did not add successfully']);
         //        $validated = $catRequest->validated();
     }
 
@@ -126,10 +126,9 @@ class CatsController extends Controller
         $catItem = Cat::find($id);
         if ($catItem && $catItem instanceof Cat) {
             $catItem->update($cat_data);
-            return response()->json(['status_code' => 200, 'message' => 'Category updated successfully']);
+            return response()->json(['message' => 'Category updated successfully', 'status_code' => 200]);
         }
-        return response()->json(['status_code' => 200, 'message' => 'Category did not update successfully']);
-
+        return response()->json(['message' => 'Category did not update successfully']);
     }
 
     /**

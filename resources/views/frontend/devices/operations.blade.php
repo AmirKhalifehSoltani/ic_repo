@@ -1,2 +1,0 @@
-<a href="{{ route('frontend.devices.edit', $device->id) }}" class="btn btn-info" title="ویرایش"><i class="icon-pencil"></i></a>
-<a href="{{ route('frontend.devices.delete', $device->id) }}" onclick="return confirm('آیا از حذف کاربر مطمئن هستید؟')" class="btn btn-danger" title="حذف"><i class="icon-trash"></i></a>

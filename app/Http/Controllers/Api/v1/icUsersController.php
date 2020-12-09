@@ -16,13 +16,6 @@ class icUsersController extends Controller
 {
     public function sendEmail(Request $request)
     {
-//        $this->validate(request(), [
-//            'email' => 'required|email|unique:users,email',
-//
-//        ], [
-//            'email.required' => 'لطفا ایمیل را وارد کنید.',
-//        ]);
-
         $validator = Validator::make(
             [
                 'email' => $request->email
@@ -34,11 +27,8 @@ class icUsersController extends Controller
 
         if ($validator->fails()) {
             $messages = $validator->errors();
-            return $messages->first('email');
-
-//            return response()->json(['errors'=>$validator->errors()]);
+            return response()->json(['message' => $messages->first('email')]);
         }
-
 
         $code_generated = rand(100000, 999999);
 
@@ -50,11 +40,11 @@ class icUsersController extends Controller
             $reg_success = User::create($new_user_data);
             if ($reg_success) {
                 Mail::to($reg_success)->send(new NewUserNotification($reg_success));
-                return 'user registered!';
+                return response()->json(['message' => 'Verification code sent to your email', 'status_code' => 200]);
             }
+            return response()->json(['message' => 'Add email failed!']);
         }
-
-
+        return response()->json(['message' => 'Operation failed!']);
     }
 
     public function verifyCode(Request $request)
@@ -72,9 +62,14 @@ class icUsersController extends Controller
 
         if ($validator->fails()) {
             $messages = $validator->errors();
-            return $messages->first('email');
-
-//            return response()->json(['errors'=>$validator->errors()]);
+            $fields = ['email', 'code'];
+            $alert = [];
+            foreach ($fields as $field) {
+                if ($messages->first($field) != '') {
+                    $alert[] = $messages->first($field);
+                }
+            }
+            return response()->json($alert);
         }
 
         if ($request->email && $request->code) {
@@ -84,12 +79,12 @@ class icUsersController extends Controller
             if ($userCode == $request->code) {
                 $user_verified = $userItem->update($user_data);
                 if ($user_verified) {
-                    return 'Your account has been verified successfully!';
+                    return response()->json(['message' => 'Your account has been verified successfully!', 'status_code' => 200]);
                 } else {
-                    return 'Verification failed!';
+                    return response()->json(['message' => 'Verification failed!']);
                 }
             }
-            return 'incorrect verification code!';
+            return response()->json(['message' => 'incorrect verification code!']);
         }
     }
 
@@ -120,7 +115,6 @@ class icUsersController extends Controller
                 }
             }
             return response()->json($alert);
-//            return response()->json(['errors'=>$validator->errors()]);
         }
 
         $email = $request->email;
@@ -137,11 +131,10 @@ class icUsersController extends Controller
             $userItem = User::where('email', $request->email)->first();
             $user_info_updated = $userItem->update($user_data);
             if ($user_info_updated) {
-                return 'Your account info updated successfully!';
+                return response()->json(['message' => 'Your account info updated successfully!', 'status_code' => 200]);
             }
         }
-        return 'Invalid Request!';
-
+        return response()->json(['message' => 'Invalid Request!', 'status_code' => 400]);
     }
 
     public function login(Request $request)
@@ -159,9 +152,14 @@ class icUsersController extends Controller
 
         if ($validator->fails()) {
             $messages = $validator->errors();
-            return $messages->first('email');
-
-//            return response()->json(['errors'=>$validator->errors()]);
+            $fields = ['email', 'password'];
+            $alert = [];
+            foreach ($fields as $field) {
+                if ($messages->first($field) != '') {
+                    $alert[] = $messages->first($field);
+                }
+            }
+            return response()->json($alert);
         }
 
         $login_data = [
@@ -173,7 +171,7 @@ class icUsersController extends Controller
             if ($login_success)
                 return response()->json(Auth::user());
         }
-        return response()->json('Login was not successful');
+        return response()->json(['message' => 'Login was not successful']);
     }
 
     public function forgetPasswordRequest(Request $request)
@@ -205,10 +203,10 @@ class icUsersController extends Controller
             if ($code_stored) {
                 // send email
                 Mail::to($user_item)->send(new NewUserNotification($user_item));
-                return response()->json(['status_code' => 200, 'message' => 'Successful forget password request!']);
+                return response()->json(['message' => 'Successful forget password request!', 'status_code' => 200]);
             }
         }
-        return response()->json(['status_code' => 200, 'message' => 'This user is not active']);
+        return response()->json(['message' => 'This user is not active', 'status_code' => 401]);
     }
 
     public function forgetPasswordVerification(Request $request)
@@ -248,11 +246,11 @@ class icUsersController extends Controller
         if ($userCode == $code) {
             $user_updated = $userItem->update($user_data);
             if ($user_updated) {
-                return response()->json(['status_code' => 200, 'message' => 'Password changed successfully!']);
+                return response()->json(['message' => 'Password changed successfully!', 'status_code' => 200]);
             } else {
-                return response()->json(['status_code' => 200, 'message' => 'Password did not changed!']);
+                return response()->json(['message' => 'Password did not changed!']);
             }
         }
-        return response()->json(['status_code' => 200, 'message' => 'Verification code is not correct']);
+        return response()->json(['message' => 'Verification code is not correct', 'status_code' => 401]);
     }
 }

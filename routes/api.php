@@ -13,13 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
 
 
 Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1'], function () {
-
     Route::post('/reg', 'icUsersController@sendEmail');
     Route::post('/vercode', 'icUsersController@verifyCode');
     Route::post('/addinfo', 'icUsersController@addMoreInfo');
@@ -28,7 +27,6 @@ Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1'], function () {
 
     Route::post('/forgetpassreq', 'icUsersController@forgetPasswordRequest');
     Route::post('/forgetpassverify', 'icUsersController@forgetPasswordVerification');
-
 });
 
 Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1', 'middleware' => 'api'], function () {
@@ -41,4 +39,4 @@ Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1', 'middleware' => 'api'],
     Route::resource('cats', 'CatsController');
 });
 
-//Route::post('auth/login', 'Api\v1\AuthController@login');
+Route::get('notAuthenticated', function () { return response()->json(['message' => 'notAuthenticated', 'status_code' => 401]); })->name('notAuthenticated');

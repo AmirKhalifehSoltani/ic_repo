@@ -26,7 +26,7 @@ class User extends Authenticatable implements JWTSubject
     const ADMIN = 1;
     const USER = 0;
 
-    protected $guarded = [];
+    protected $fillable = ['first_name', 'last_name', 'email', 'icvcode', 'email_verified_at', 'password'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -34,8 +34,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
-//        'password', 'remember_token',
+        'password', 'remember_token', 'icvcode'
     ];
 
     public function setPasswordAttribute($value)
