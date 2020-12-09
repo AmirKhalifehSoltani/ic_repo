@@ -1,3 +1,3 @@
-Pull repository!<br>
+Clone repository!<br>
 .env config.<br>
 php artisan migrate
