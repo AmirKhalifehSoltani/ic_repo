@@ -30,3 +30,18 @@ Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1'], function () {
     Route::post('/forgetpassverify', 'icUsersController@forgetPasswordVerification');
 
 });
+
+Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1', 'middleware' => 'api'], function () {
+    Route::post('/logintoken', 'AuthController@login');
+    Route::post('/logouttoken', 'AuthController@logout');
+    Route::post('/refresh', 'AuthController@refresh');
+    Route::post('/me', 'AuthController@me');
+
+
+});
+
+
+Route::post('/login', function () {
+    return 123;
+});
+//Route::post('auth/login', 'Api\v1\AuthController@login');

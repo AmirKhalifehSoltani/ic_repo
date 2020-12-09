@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d5dbbef-81e3-44d2-8a8d-4246a96eb7e3" name="Default Changelist" comment="" />
+    <list default="true" id="8d5dbbef-81e3-44d2-8a8d-4246a96eb7e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ccounter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ccounter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +25,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="29" column="82" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="82" />
+            <state relative-caret-position="400">
+              <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+              <folding>
+                <element signature="e#47#83#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +71,24 @@
                 <element signature="e#5086#5590#0#PHP" />
                 <element signature="e#6526#8024#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -140,11 +172,12 @@
       <dir>C:\xampp\htdocs\hcgsm\public\images</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php" />
-        <option value="$PROJECT_DIR$/resources/views/test.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/devices/users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/devices/create.blade.php" />
@@ -175,7 +208,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DevicesController.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa3468.2576/SendSMS.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/users/registeration.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/users/verification.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/users/signin.blade.php" />
@@ -188,12 +220,15 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/DeviceRequest.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsersController.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Mail/NewUserNotification.php" />
         <option value="$PROJECT_DIR$/resources/views/Mails/users/verfication_code.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/v1/icUsersController.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/config/auth.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/v1/AuthController.php" />
       </list>
     </option>
   </component>
@@ -293,6 +328,9 @@
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -302,6 +340,7 @@
     <option name="height" value="1026" />
   </component>
   <component name="ProjectId" id="1XvE6GqpiMrWNfyNiMT73do2R4f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -323,18 +362,7 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -487,12 +515,12 @@
       <workItem from="1603471587486" duration="9923000" />
       <workItem from="1603903228108" duration="2739000" />
       <workItem from="1604423314392" duration="602000" />
-      <workItem from="1607444652690" duration="11390000" />
+      <workItem from="1607444652690" duration="20187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531598000" />
+    <option name="totallyTimeSpent" value="540395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -501,7 +529,7 @@
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298731" />
@@ -549,25 +577,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="377" column="8" selection-start-line="377" selection-start-column="8" selection-end-line="377" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-837" />
@@ -651,13 +660,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa3468.2576/SendSMS.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-923" />
@@ -821,75 +823,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DevicesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#221#252#0#PHP" />
-            <element signature="e#1057#1104#0#PHP" />
-            <element signature="e#1723#3617#0#PHP" />
-            <element signature="e#1789#3611#0#PHP" />
-            <element signature="e#2035#2148#0#PHP" />
-            <element signature="e#2150#2173#0#PHP" />
-            <element signature="e#2377#2443#0#PHP" />
-            <element signature="e#2674#3545#0#PHP" />
-            <element signature="e#2892#3468#0#PHP" />
-            <element signature="e#3006#3313#0#PHP" />
-            <element signature="e#3070#3291#0#PHP" />
-            <element signature="e#3400#3468#0#PHP" />
-            <element signature="e#3483#3545#0#PHP" />
-            <element signature="e#3556#3611#0#PHP" />
-            <element signature="e#3623#4815#0#PHP" />
-            <element signature="e#3687#4809#0#PHP" />
-            <element signature="e#3964#4078#0#PHP" />
-            <element signature="e#4277#4705#0#PHP" />
-            <element signature="e#4423#4514#0#PHP" />
-            <element signature="e#4605#4691#0#PHP" />
-            <element signature="e#4754#4809#0#PHP" />
-            <element signature="e#4821#5526#0#PHP" />
-            <element signature="e#4876#5520#0#PHP" />
-            <element signature="e#5179#5453#0#PHP" />
-            <element signature="e#5389#5453#0#PHP" />
-            <element signature="e#5464#5520#0#PHP" />
-            <element signature="e#5532#7127#0#PHP" />
-            <element signature="e#5587#7121#0#PHP" />
-            <element signature="e#5870#5983#0#PHP" />
-            <element signature="e#6004#6187#0#PHP" />
-            <element signature="e#6202#7049#0#PHP" />
-            <element signature="e#6266#6406#0#PHP" />
-            <element signature="e#6535#6767#0#PHP" />
-            <element signature="e#6692#6767#0#PHP" />
-            <element signature="e#6782#7049#0#PHP" />
-            <element signature="e#6857#7035#0#PHP" />
-            <element signature="e#6959#7035#0#PHP" />
-            <element signature="e#7060#7121#0#PHP" />
-            <element signature="e#7133#8059#0#PHP" />
-            <element signature="e#7191#8053#0#PHP" />
-            <element signature="e#7441#7550#0#PHP" />
-            <element signature="e#7666#7985#0#PHP" />
-            <element signature="e#7751#7904#0#PHP" />
-            <element signature="e#7832#7904#0#PHP" />
-            <element signature="e#7919#7985#0#PHP" />
-            <element signature="e#7996#8053#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7378">
           <caret line="238" column="68" selection-start-line="238" selection-start-column="68" selection-end-line="238" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#23#45#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,13 +851,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/services.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1010,6 +940,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/DevicesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="55" />
+          <folding>
+            <element signature="e#221#252#0#PHP" />
+            <element signature="e#1057#1104#0#PHP" />
+            <element signature="e#1723#3617#0#PHP" />
+            <element signature="e#1789#3611#0#PHP" />
+            <element signature="e#2035#2148#0#PHP" />
+            <element signature="e#2150#2173#0#PHP" />
+            <element signature="e#2377#2443#0#PHP" />
+            <element signature="e#2674#3545#0#PHP" />
+            <element signature="e#2892#3468#0#PHP" />
+            <element signature="e#3006#3313#0#PHP" />
+            <element signature="e#3070#3291#0#PHP" />
+            <element signature="e#3400#3468#0#PHP" />
+            <element signature="e#3483#3545#0#PHP" />
+            <element signature="e#3556#3611#0#PHP" />
+            <element signature="e#3623#4815#0#PHP" />
+            <element signature="e#3687#4809#0#PHP" />
+            <element signature="e#3964#4078#0#PHP" />
+            <element signature="e#4277#4705#0#PHP" />
+            <element signature="e#4423#4514#0#PHP" />
+            <element signature="e#4605#4691#0#PHP" />
+            <element signature="e#4754#4809#0#PHP" />
+            <element signature="e#4821#5526#0#PHP" />
+            <element signature="e#4876#5520#0#PHP" />
+            <element signature="e#5179#5453#0#PHP" />
+            <element signature="e#5389#5453#0#PHP" />
+            <element signature="e#5464#5520#0#PHP" />
+            <element signature="e#5532#7127#0#PHP" />
+            <element signature="e#5587#7121#0#PHP" />
+            <element signature="e#5870#5983#0#PHP" />
+            <element signature="e#6004#6187#0#PHP" />
+            <element signature="e#6202#7049#0#PHP" />
+            <element signature="e#6266#6406#0#PHP" />
+            <element signature="e#6535#6767#0#PHP" />
+            <element signature="e#6692#6767#0#PHP" />
+            <element signature="e#6782#7049#0#PHP" />
+            <element signature="e#6857#7035#0#PHP" />
+            <element signature="e#6959#7035#0#PHP" />
+            <element signature="e#7060#7121#0#PHP" />
+            <element signature="e#7133#8059#0#PHP" />
+            <element signature="e#7191#8053#0#PHP" />
+            <element signature="e#7441#7550#0#PHP" />
+            <element signature="e#7666#7985#0#PHP" />
+            <element signature="e#7751#7904#0#PHP" />
+            <element signature="e#7832#7904#0#PHP" />
+            <element signature="e#7919#7985#0#PHP" />
+            <element signature="e#7996#8053#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/icUsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1047,10 +1039,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/jwt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5213" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="82" />
+        <state relative-caret-position="386">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="66" column="50" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+          <folding>
+            <element signature="e#47#83#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
