@@ -186,7 +186,7 @@ class icUsersController extends Controller
                 'email' => 'required|email|exists:users,email'
             ]
         );
-
+        $alert = [];
         if ($validator->fails()) {
             $messages = $validator->errors();
             $alert[] = $messages->first('email');

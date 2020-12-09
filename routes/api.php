@@ -38,11 +38,7 @@ Route::group(['namespace' => 'Api\v1', 'prefix' => 'v1', 'middleware' => 'api'],
     Route::post('/me', 'AuthController@me');
 
     Route::resource('posts', 'PostsController');
-    Route::resource('cats', 'catsController');
+    Route::resource('cats', 'CatsController');
 });
 
-
-Route::post('/login', function () {
-    return 123;
-});
 //Route::post('auth/login', 'Api\v1\AuthController@login');

@@ -7,6 +7,7 @@ use App\Models\Device;
 use App\Models\Equipmentsheet;
 use App\Models\Log;
 use App\Models\Materialsheet;
+use App\Models\Post;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -51,14 +52,9 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
     ];
 
-//    public function devices()
-//    {
-//        return $this->hasMany(Device::class, 'device_user_id');
-//    }
-
-    public function devices()
+    public function posts()
     {
-        return $this->belongsToMany(Device::class, 'device_user', 'user_id', 'device_id');
+        return $this->hasMany(Post::class, 'user_id');
     }
 
     /**
